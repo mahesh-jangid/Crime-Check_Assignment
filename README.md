@@ -4,7 +4,7 @@
 
 #### This is an Notice Board Application.
 
-## Available Scripts
+## Available Scripts to run project locally
 
 - First we have to start server:
 
