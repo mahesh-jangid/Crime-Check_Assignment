@@ -44,7 +44,7 @@ export const Dashboard = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post("https://notice-board-01.herokuapp.com/notices/create", notice);
+    axios.post("/notices/create", notice);
   };
 
   return (

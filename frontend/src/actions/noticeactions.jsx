@@ -9,7 +9,7 @@ import {
 export const fetchNotices = () => {
   return (dispatch) => {
     dispatch({ type: NOTICES_REQUEST });
-    Axios.get(`https://notice-board-01.herokuapp.com/notices/all`)
+    Axios.get(`/notices/all`)
       .then((res) => {
         console.log(res.data);
         dispatch({ type: NOTICES_SUCCESS, payload: res.data });

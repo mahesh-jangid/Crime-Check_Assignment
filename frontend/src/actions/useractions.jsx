@@ -13,13 +13,10 @@ import {
 export const register = (name, password) => async (dispatch) => {
   dispatch({ type: USER_REGISTER_REQUEST, payload: { name, password } });
   try {
-    const { data } = await Axios.post(
-      "https://notice-board-01.herokuapp.com/api/users/register",
-      {
-        name,
-        password,
-      }
-    );
+    const { data } = await Axios.post("/api/users/register", {
+      name,
+      password,
+    });
     console.log(data);
     dispatch({ type: USER_REGISTER_SUCCESS, payload: data });
     document.location.href = "/login";
@@ -35,10 +32,7 @@ export const register = (name, password) => async (dispatch) => {
 export const signin = (name) => async (dispatch) => {
   dispatch({ type: USER_SIGNIN_REQUEST, payload: { name } });
   try {
-    const { data } = await Axios.post(
-      "https://notice-board-01.herokuapp.com/api/users/login",
-      { name }
-    );
+    const { data } = await Axios.post("/api/users/login", { name });
     console.log(data);
     dispatch({ type: USER_SIGNIN_SUCCESS, payload: data });
     document.location.href = "/dashboard";
