@@ -44,7 +44,7 @@ export const Dashboard = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post("/api/notices/create", notice);
+    axios.post("/notices/create", notice);
     dispatch(fetchNotices());
   };
 
