@@ -1,4 +1,4 @@
-# MERN-Ecommerce-Project
+# MERN Notice Board Application
 
 - Demo Link : https://notice-board-03.herokuapp.com/
 
