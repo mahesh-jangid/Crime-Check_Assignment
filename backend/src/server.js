@@ -26,7 +26,7 @@ mongoose.connect(
 );
 
 app.use("/api/users", userController);
-app.use("api/notices", NoticeController);
+app.use("/notices", NoticeController);
 
 // if (process.env.NODE_ENV === "production") {
 //   app.use(express.static("build"));
