@@ -36,7 +36,7 @@ export const Dashboard = () => {
   });
   useEffect(() => {
     dispatch(fetchNotices());
-  }, [notice.notice_Title]);
+  }, [notice]);
 
   NoticesArr.sort((a, b) => {
     return new Date(b.date) - new Date(a.date);
@@ -44,7 +44,8 @@ export const Dashboard = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post("/notices/create", notice);
+    axios.post("/api/notices/create", notice);
+    dispatch(fetchNotices());
   };
 
   return (

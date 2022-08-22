@@ -1,7 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const http = require("http");
-const connect = require("./configs/db");
 const userController = require("./controllers/user.controller");
 const NoticeController = require("./controllers/notice.controller");
 const path = require("path");
@@ -27,7 +26,7 @@ mongoose.connect(
 );
 
 app.use("/api/users", userController);
-app.use("/notices", NoticeController);
+app.use("api/notices", NoticeController);
 
 // if (process.env.NODE_ENV === "production") {
 //   app.use(express.static("build"));
