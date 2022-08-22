@@ -5,6 +5,8 @@ const userController = require("./controllers/user.controller");
 const NoticeController = require("./controllers/notice.controller");
 const path = require("path");
 var cors = require("cors");
+const dotenv = require("dotenv");
+dotenv.config();
 
 // const { register, login } = require("./controllers/auth.controller");
 const app = express();
