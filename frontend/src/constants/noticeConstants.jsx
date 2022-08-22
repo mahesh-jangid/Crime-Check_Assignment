@@ -1,0 +1,3 @@
+export const NOTICES_REQUEST = "NOTICES_REQUEST";
+export const NOTICES_SUCCESS = "NOTICES_SUCCESS";
+export const NOTICE_FAIL = "NOTICE_FAIL";
