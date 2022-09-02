@@ -2,8 +2,9 @@
 
 - Demo Link : https://notice-board-03.herokuapp.com/
 
+### Description:
 
-### This is a Public Notice Board Application Where a User can post new message and see others messages on Dashboard.
+  This is a Public Notice Board Application Where a User can post new message and see others messages on Dashboard.
 
 ## Available Scripts to run project locally
 
